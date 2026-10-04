@@ -20,4 +20,18 @@ body {
     /* Ensure the body expands to fill the screen viewport height */
     min-height: 100vh; 
     margin: 0;
+
+    font-family: 'MyCustomFont', sans-serif; /* Always include a generic fallback */
+}
+
+@font-face {
+  font-family: 'Audiowide';
+  src: url('./Audiowide/Audiowide-Regular.ttf') format('ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Keeps text visible while the font loads */
+}
+
+h1 {
+    font-family: 'Audiowide';
 }
