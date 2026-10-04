@@ -1,3 +1,23 @@
 body {
-    background-image: url(./slowdotvibration.gif);
+    /* Set a fallback color while the GIF loads */
+    background-color: #222; 
+    
+    /* Point to your GIF file or an absolute URL */
+    background-image: url('./slowdotvibration.gif'); 
+    
+    /* Center the image horizontally and vertically */
+    background-position: center center; 
+    
+    /* Ensure the GIF stretches to cover the entire page */
+    background-size: cover; 
+    
+    /* Keep the background fixed in place when scrolling */
+    background-attachment: fixed; 
+    
+    /* Prevent the image from repeating/tiling */
+    background-repeat: no-repeat; 
+    
+    /* Ensure the body expands to fill the screen viewport height */
+    min-height: 100vh; 
+    margin: 0;
 }
