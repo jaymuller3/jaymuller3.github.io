@@ -1,4 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
+    margin: 0;
+    padding: 0;
     /* Set a fallback color while the GIF loads */
     background-color: #222; 
     
@@ -25,11 +31,11 @@ body {
 }
 
 @font-face {
-  font-family: "Audiowide";
-  src: url('fonts/Audiowide/Audiowide-Regular.ttf');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap; /* Keeps text visible while the font loads */
+    font-family: "Audiowide";
+    src: url('fonts/Audiowide/Audiowide-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap; /* Keeps text visible while the font loads */
 }
 
 h1 {
@@ -37,4 +43,18 @@ h1 {
     font-family: "Audiowide", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-fit: shrink per-line 50%;
+    position: fixed;       /* Locks the bar to the viewport */
+    top: 0;                /* Aligns it perfectly to the top edge */
+    left: 0;               /* Aligns it to the left edge */
+    width: 100%;           /* Spans the entire width of the screen */
+    height: 60px;          /* Adjust the height of the colored area */
+    background-color: #082d44; /* Your desired background color */
+    z-index: 1000;         /* Ensures it stays on top of other content */
 }
